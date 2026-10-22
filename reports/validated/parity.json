@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "reference_runtime": {
+    "R": "4.6.1",
+    "packages": {
+      "satuRn": "1.20.0",
+      "limma": "3.68.4",
+      "locfdr": "1.1.8",
+      "jsonlite": "2.0.0",
+      "SummarizedExperiment": "1.42.0"
+    }
+  },
+  "manifest_sha256": "84dded2c88e50171a6dfc7d5d9530c8c55783eaae2ffc89e5952f9ba5d8ab260",
+  "python_runtime": {
+    "python": "3.12.10",
+    "saturna": "0.1.0a1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.0"
+  },
+  "comparisons": [
+    {
+      "name": "balanced/coefficients",
+      "passed": true,
+      "elements": 48,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.10702591327572e-15
+    },
+    {
+      "name": "balanced/covariance_unscaled",
+      "passed": true,
+      "elements": 96,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.5102810375396984e-17
+    },
+    {
+      "name": "balanced/dispersion",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 6.750155989720952e-14
+    },
+    {
+      "name": "balanced/residual_df",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "balanced/variance_posterior",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 3.495870259939693e-12
+    },
+    {
+      "name": "balanced/df_posterior",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 9.539036227579345e-13
+    },
+    {
+      "name": "balanced/estimate",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.10702591327572e-15
+    },
+    {
+      "name": "balanced/standard_error",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 2.942091015256665e-14
+    },
+    {
+      "name": "balanced/df",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 9.539036227579345e-13
+    },
+    {
+      "name": "balanced/statistic",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 9.094947017729282e-13
+    },
+    {
+      "name": "balanced/pvalue",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 7.849276784099857e-14
+    },
+    {
+      "name": "balanced/fdr",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 2.4846791291111003e-13
+    },
+    {
+      "name": "unequal_df/coefficients",
+      "passed": true,
+      "elements": 48,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.218847493575595e-15
+    },
+    {
+      "name": "unequal_df/covariance_unscaled",
+      "passed": true,
+      "elements": 96,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.551115123125783e-17
+    },
+    {
+      "name": "unequal_df/dispersion",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.263256414560601e-14
+    },
+    {
+      "name": "unequal_df/residual_df",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "unequal_df/variance_posterior",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 9.061196237780678e-12
+    },
+    {
+      "name": "unequal_df/df_posterior",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 8.947509400059062e-12
+    },
+    {
+      "name": "unequal_df/estimate",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 1.1934897514720433e-15
+    },
+    {
+      "name": "unequal_df/standard_error",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 1.5687451337953462e-13
+    },
+    {
+      "name": "unequal_df/df",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 8.947509400059062e-12
+    },
+    {
+      "name": "unequal_df/statistic",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 3.071765064532883e-12
+    },
+    {
+      "name": "unequal_df/pvalue",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.02098362886727e-13
+    },
+    {
+      "name": "unequal_df/fdr",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 2.9765079290200447e-13
+    },
+    {
+      "name": "empirical/coefficients",
+      "passed": true,
+      "elements": 1440,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 6.439293542825908e-15
+    },
+    {
+      "name": "empirical/covariance_unscaled",
+      "passed": true,
+      "elements": 2880,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 2.498001805406602e-16
+    },
+    {
+      "name": "empirical/dispersion",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 9.592326932761353e-14
+    },
+    {
+      "name": "empirical/residual_df",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "empirical/variance_posterior",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 6.359357485052897e-13
+    },
+    {
+      "name": "empirical/df_posterior",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.263256414560601e-14
+    },
+    {
+      "name": "empirical/estimate",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.329070518200751e-15
+    },
+    {
+      "name": "empirical/standard_error",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 6.7390537594747e-14
+    },
+    {
+      "name": "empirical/df",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.263256414560601e-14
+    },
+    {
+      "name": "empirical/statistic",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 1.943334382303874e-12
+    },
+    {
+      "name": "empirical/pvalue",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 1.0025313912365164e-13
+    },
+    {
+      "name": "empirical/fdr",
+      "passed": true,
+      "elements": 720,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 3.469446951953614e-13
+    },
+    {
+      "name": "empirical/empirical_pvalue",
+      "passed": true,
+      "elements": 720,
+      "rtol": 3e-06,
+      "atol": 3e-08,
+      "max_absolute_error": 5.9610406610843825e-09
+    },
+    {
+      "name": "empirical/empirical_fdr",
+      "passed": true,
+      "elements": 720,
+      "rtol": 3e-06,
+      "atol": 3e-08,
+      "max_absolute_error": 2.9772579179798697e-08
+    },
+    {
+      "name": "covariate/coefficients",
+      "passed": true,
+      "elements": 72,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.884981308350689e-15
+    },
+    {
+      "name": "covariate/covariance_unscaled",
+      "passed": true,
+      "elements": 216,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.898059818321144e-17
+    },
+    {
+      "name": "covariate/dispersion",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.684341886080802e-14
+    },
+    {
+      "name": "covariate/residual_df",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 0.0
+    },
+    {
+      "name": "covariate/variance_posterior",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 3.730349362740526e-14
+    },
+    {
+      "name": "covariate/df_posterior",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 6.039613253960852e-14
+    },
+    {
+      "name": "covariate/estimate",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 3.774758283725532e-15
+    },
+    {
+      "name": "covariate/standard_error",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 4.996003610813204e-16
+    },
+    {
+      "name": "covariate/df",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 6.039613253960852e-14
+    },
+    {
+      "name": "covariate/statistic",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 5.329070518200751e-15
+    },
+    {
+      "name": "covariate/pvalue",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 2.55351295663786e-15
+    },
+    {
+      "name": "covariate/fdr",
+      "passed": true,
+      "elements": 24,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "max_absolute_error": 2.55351295663786e-15
+    },
+    {
+      "name": "shifted_null/empirical_pvalue",
+      "passed": true,
+      "elements": 950,
+      "rtol": 3e-06,
+      "atol": 3e-08,
+      "max_absolute_error": 1.1498023921863165e-08
+    }
+  ]
+}

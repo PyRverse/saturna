@@ -46,7 +46,22 @@ the audit; no clean-room development claim is made. R fixtures execute the
 installed reference packages separately; neither R nor locfdr is a runtime
 dependency or bundled with Saturna.
 
+benchmarks/pasilla/satuRn.R repeats the estimation steps of satuRn's
+p.adjust_empirical in R so the fitted null can be reported. It calls the
+locfdr_locmle function installed with satuRn rather than copying it. The script
+is reference tooling and is not part of the Python package.
+
 The Saturna IRLS implementation uses standard grouped-binomial equations and
 matches R GLM initialization and stopping conventions. It is newly written
 Python code. Mathematical methods and third-party package names retain their
 original attribution; this package makes no upstream endorsement claim.
+
+## Benchmark data
+
+benchmarks/pasilla/inputs contains a filtered subset of the transcript counts in
+PasillaTranscriptExpr 1.40.0 (Malgorzata Nowicka; Bioconductor; GPL (>= 3)).
+Those counts were quantified with kallisto from GEO GSE18508, produced by
+Brooks et al. (2011, Genome Research 21:193-202) for the modENCODE project. They
+are used under the ENCODE/modENCODE data release policy, which places no
+restrictions on use and asks users to cite the consortium. Only the filtering
+and reformatting described in benchmarks/pasilla/prepare.py were applied.

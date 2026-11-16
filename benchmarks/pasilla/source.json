@@ -1,0 +1,21 @@
+{
+  "name": "PasillaTranscriptExpr",
+  "version": "1.40.0",
+  "repository": "Bioconductor 3.23 experiment data",
+  "url": "https://bioconductor.org/packages/3.23/data/experiment/src/contrib/PasillaTranscriptExpr_1.40.0.tar.gz",
+  "bytes": 801815,
+  "sha256": "a58f63c5b6e8ff2e0e8692a5df0d7546cd2cb67987b8205cc21d2ce0f9953262",
+  "members": {
+    "PasillaTranscriptExpr/inst/extdata/counts.txt": "0c049ce806a9d3a2e200b5794499f0a19abaf8caa0372f46a943bbc740d358d3",
+    "PasillaTranscriptExpr/inst/extdata/metadata.txt": "657f8e50cdb2d426c98b59bcb49ddcd57a038f76538ef3d7fe99cbdf367d4ada"
+  },
+  "license": "GPL (>= 3), as declared in the package DESCRIPTION",
+  "raw_data": "GEO GSE18508 / SRA SRP001537 (modENCODE), samples GSM461176-GSM461182",
+  "raw_data_terms": "ENCODE/modENCODE data release policy: https://www.genome.gov/27528022",
+  "quantification": "kallisto 0.42.1 expected counts against Ensembl 70 (BDGP5.70) cDNA; gene IDs from the Ensembl 70 GTF",
+  "citations": [
+    "Brooks AN et al. (2011) Conservation of an RNA regulatory map between Drosophila and mammals. Genome Research 21:193-202. doi:10.1101/gr.108662.110",
+    "Nowicka M, Robinson MD (2016) DRIMSeq: a Dirichlet-multinomial framework for multivariate count outcomes in genomics. F1000Research 5:1356. doi:10.12688/f1000research.8900.2",
+    "modENCODE Consortium (2010) Identification of functional elements and regulatory circuits by Drosophila modENCODE. Science 330:1787-1797. doi:10.1126/science.1198374"
+  ]
+}

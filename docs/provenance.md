@@ -31,6 +31,21 @@ every manifest hash, and generated reports identify the manifest by its hash.
 Machine-specific executable/library paths are supplied as command arguments and
 are not recorded in the portable provenance.
 
+## Real-data benchmark
+
+benchmarks/pasilla holds a separate, real-data reference. Its source is the
+Bioconductor 3.23 archive PasillaTranscriptExpr 1.40.0, pinned by URL and
+SHA-256 in source.json along with the hashes of the two archive members used.
+Licence and data-use terms are recorded there and in NOTICE.md. The archive is
+downloaded and verified by prepare.py. satuRn.R was actually executed on
+2026-11-16 with the runtime listed above. Its outputs carry 17 significant digits. Re-running
+prepare.py and reference.py reproduces the inputs and outputs byte for byte.
+benchmarks/pasilla/manifest.json hashes the source descriptor, scripts, inputs,
+and outputs; tests/test_pasilla.py and compare.py verify it. See
+docs/realdata.md.
+
+## Synthetic fixtures
+
 Covered inputs: 24 balanced transcripts, 24 transcripts with gene-specific zero
 samples/unequal residual df, 24 transcripts with a continuous covariate and a
 multi-coefficient contrast, and 720 transcripts with empirical correction. A

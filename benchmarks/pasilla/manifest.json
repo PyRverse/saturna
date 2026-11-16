@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generator": "Actual Rscript execution of benchmarks/pasilla/satuRn.R",
+  "data_origin": "PasillaTranscriptExpr 1.40.0 kallisto counts; see source.json",
+  "runtime": {
+    "R": "4.6.1",
+    "packages": {
+      "satuRn": "1.20.0",
+      "limma": "3.68.4",
+      "locfdr": "1.1.8",
+      "SummarizedExperiment": "1.42.0",
+      "jsonlite": "2.0.0"
+    }
+  },
+  "sha256": {
+    "source.json": "a349613c989c6d5443ed001da56f53903a3bd54a84c0cd7d6595cec17f138fb9",
+    "prepare.py": "cdf810af816b180c41f6b58f4629373e6684b58264b5ccc51e68cb16b1ba0348",
+    "satuRn.R": "a8cfd2b0f56e0f17af9247bb78181b266bc31012c3d658258b1de6ee6d6065d6",
+    "reference.py": "af194d2fbd470b5501c5698ff409876d6d9d2e6496118e105de1caffe504f273",
+    "inputs/counts.csv": "d18aa8174505a90092110a52b802e1a0e77ab84dca317fefdec22d489dfa5ba8",
+    "inputs/design.csv": "1c58aa700148a49f1cb5ed79cf206580ed912709fef7d4d502b0f2d2b9e8c8e0",
+    "inputs/filter.json": "a7e6a0355126e20e8c3c77a950fd81a4e81addff3a8292d0114685f86e1a6367",
+    "reference/primary.csv": "4a8e23ed25a1b83b3d348eebd109d4f7a938ae15c03ef73e5cc06f3f7e28c37a",
+    "reference/unrestricted.csv": "e98d80517adc9be2c6e9309e5a8c2956c7ada55467d91027155493ad41ef666e",
+    "reference/runtime.json": "12a6b6f4136632f1bb46ee8d574d39d100ef13a5930edd9c1b3747244eb1561d"
+  }
+}

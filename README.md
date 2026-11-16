@@ -56,7 +56,16 @@ python -m build
 ```
 
 Tests compare against checked-in R outputs without requiring R. The [reference
-instructions](reference/README.md) explain regeneration. The [provenance and
+instructions](reference/README.md) explain regeneration.
+
+A [real-data benchmark](docs/realdata.md) compares Saturna with satuRn on the
+public pasilla knockdown experiment (10,003 transcripts, 7 independent bulk
+samples). Fit and regular-test outputs agree to within 7.9e-11 relative error,
+and calls at FDR 0.05 are identical (293 transcripts). Empirical p-values differ
+by up to 1.1e-5 relative, because the independent empirical-null optimizer stops
+at a slightly different point. Genes whose transcripts quantified identically
+must be filtered before using Saturna. Run it with
+`python benchmarks/pasilla/compare.py`. The [provenance and
 license audit](docs/provenance.md) identify exact upstream sources and the separate
 empirical optimizer. [NOTICE.md](NOTICE.md) retains author and license notices.
 

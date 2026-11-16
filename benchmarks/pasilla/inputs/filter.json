@@ -1,0 +1,95 @@
+{
+  "rule": {
+    "min_count": 10,
+    "gene_total_min_count_in_all_samples": true,
+    "transcript_min_samples": 3,
+    "min_transcripts_per_gene": 2,
+    "uninformative_gene": "all retained transcripts share one identical count vector"
+  },
+  "annotated": {
+    "transcripts": 27142,
+    "genes": 14112
+  },
+  "removed": {
+    "gene_expression": {
+      "transcripts": 9433,
+      "genes": 6438
+    },
+    "transcript_expression": {
+      "transcripts": 3185,
+      "genes": 1666
+    },
+    "single_transcript_gene": {
+      "transcripts": 4417,
+      "genes": 4417
+    }
+  },
+  "unrestricted": {
+    "transcripts": 10107,
+    "genes": 3248
+  },
+  "uninformative": {
+    "transcripts": 104,
+    "genes": 52
+  },
+  "primary": {
+    "transcripts": 10003,
+    "genes": 3196
+  },
+  "design": {
+    "columns": [
+      "intercept",
+      "knockdown",
+      "paired_end"
+    ],
+    "contrast": [
+      0,
+      1,
+      0
+    ],
+    "samples": [
+      {
+        "SampleName": "GSM461176",
+        "LibraryName": "Untreated-1",
+        "LibraryLayout": "SINGLE",
+        "condition": "CTL"
+      },
+      {
+        "SampleName": "GSM461177",
+        "LibraryName": "Untreated-3",
+        "LibraryLayout": "PAIRED",
+        "condition": "CTL"
+      },
+      {
+        "SampleName": "GSM461178",
+        "LibraryName": "Untreated-4",
+        "LibraryLayout": "PAIRED",
+        "condition": "CTL"
+      },
+      {
+        "SampleName": "GSM461179",
+        "LibraryName": "CG8144_RNAi-1",
+        "LibraryLayout": "SINGLE",
+        "condition": "KD"
+      },
+      {
+        "SampleName": "GSM461180",
+        "LibraryName": "CG8144_RNAi-3",
+        "LibraryLayout": "PAIRED",
+        "condition": "KD"
+      },
+      {
+        "SampleName": "GSM461181",
+        "LibraryName": "CG8144_RNAi-4",
+        "LibraryLayout": "PAIRED",
+        "condition": "KD"
+      },
+      {
+        "SampleName": "GSM461182",
+        "LibraryName": "Untreated-6",
+        "LibraryLayout": "SINGLE",
+        "condition": "CTL"
+      }
+    ]
+  }
+}

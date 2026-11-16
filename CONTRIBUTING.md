@@ -1,7 +1,9 @@
 # Contributing
 
 Install with `python -m pip install -e ".[dev]"`, then run pytest, Ruff, the
-parity report, the example and a build. Changes to numerical behavior need a
+parity report, the real-data benchmark (`benchmarks/pasilla/compare.py`), the
+example and a build. A numerical change that alters the real-data report must
+update docs/realdata.md and reports/validated/pasilla.md together. Changes to numerical behavior need a
 meaningful regression case and an explicit support/provenance update. Preserve
 input order and reject unsupported statistical settings; do not silently fall
 back to another method. Review fixture changes against the R generator.

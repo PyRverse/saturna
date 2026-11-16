@@ -1,0 +1,437 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "preregistered_passed": false,
+  "criteria": {
+    "Identical transcript set and order": true,
+    "Every satuRn model is a finite glm fit": true,
+    "Every quantity within tolerance": false,
+    "Identical regular calls at FDR 0.05": true,
+    "Identical empirical calls at FDR 0.05": true,
+    "Saturna still rejects the unrestricted set (documented)": true
+  },
+  "discrepancy_checks": {
+    "D1: rejection is a zero-dispersion error on an uninformative transcript": true,
+    "D2: every quantity except empirical_pvalue within pre-registered tolerance": true,
+    "D2: Saturna's formula with satuRn's null reproduces satuRn's empirical p-values": true,
+    "D2: null location and scale differ by less than 1e-5": true,
+    "D2: both nulls reach the same likelihood on satuRn's final window (within 1e-8)": true
+  },
+  "empirical_null_diagnosis": {
+    "replay_with_satuRn_null": {
+      "elements": 10003,
+      "rtol": 2e-08,
+      "atol": 2e-10,
+      "passed": true,
+      "outside_tolerance": 0,
+      "max_absolute_error": 1.6653345369377348e-15,
+      "max_relative_error": 3.7497244220182295e-14,
+      "spearman": 0.9999999999999999
+    },
+    "location_difference": 2.731262847589788e-07,
+    "scale_difference": 1.4229242470964465e-06,
+    "satuRn_final_window": [
+      -2.5712849540025036,
+      2.5536928291232823
+    ],
+    "negative_log_likelihood_on_satuRn_window": {
+      "saturna": 6119.654275559505,
+      "satuRn": 6119.654275559829
+    }
+  },
+  "manifest_sha256": "012332327cefa4e2fa6634ce62ee7c8afa4f52c779d34322a5cbc886425e9f47",
+  "reference_runtime": {
+    "R": "4.6.1",
+    "packages": {
+      "satuRn": "1.20.0",
+      "limma": "3.68.4",
+      "locfdr": "1.1.8",
+      "SummarizedExperiment": "1.42.0",
+      "jsonlite": "2.0.0"
+    }
+  },
+  "python_runtime": {
+    "python": "3.12.10",
+    "saturna": "0.1.0a1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "pandas": "3.1.0"
+  },
+  "filter": {
+    "rule": {
+      "min_count": 10,
+      "gene_total_min_count_in_all_samples": true,
+      "transcript_min_samples": 3,
+      "min_transcripts_per_gene": 2,
+      "uninformative_gene": "all retained transcripts share one identical count vector"
+    },
+    "annotated": {
+      "transcripts": 27142,
+      "genes": 14112
+    },
+    "removed": {
+      "gene_expression": {
+        "transcripts": 9433,
+        "genes": 6438
+      },
+      "transcript_expression": {
+        "transcripts": 3185,
+        "genes": 1666
+      },
+      "single_transcript_gene": {
+        "transcripts": 4417,
+        "genes": 4417
+      }
+    },
+    "unrestricted": {
+      "transcripts": 10107,
+      "genes": 3248
+    },
+    "uninformative": {
+      "transcripts": 104,
+      "genes": 52
+    },
+    "primary": {
+      "transcripts": 10003,
+      "genes": 3196
+    },
+    "design": {
+      "columns": [
+        "intercept",
+        "knockdown",
+        "paired_end"
+      ],
+      "contrast": [
+        0,
+        1,
+        0
+      ],
+      "samples": [
+        {
+          "SampleName": "GSM461176",
+          "LibraryName": "Untreated-1",
+          "LibraryLayout": "SINGLE",
+          "condition": "CTL"
+        },
+        {
+          "SampleName": "GSM461177",
+          "LibraryName": "Untreated-3",
+          "LibraryLayout": "PAIRED",
+          "condition": "CTL"
+        },
+        {
+          "SampleName": "GSM461178",
+          "LibraryName": "Untreated-4",
+          "LibraryLayout": "PAIRED",
+          "condition": "CTL"
+        },
+        {
+          "SampleName": "GSM461179",
+          "LibraryName": "CG8144_RNAi-1",
+          "LibraryLayout": "SINGLE",
+          "condition": "KD"
+        },
+        {
+          "SampleName": "GSM461180",
+          "LibraryName": "CG8144_RNAi-3",
+          "LibraryLayout": "PAIRED",
+          "condition": "KD"
+        },
+        {
+          "SampleName": "GSM461181",
+          "LibraryName": "CG8144_RNAi-4",
+          "LibraryLayout": "PAIRED",
+          "condition": "KD"
+        },
+        {
+          "SampleName": "GSM461182",
+          "LibraryName": "Untreated-6",
+          "LibraryLayout": "SINGLE",
+          "condition": "CTL"
+        }
+      ]
+    }
+  },
+  "saturna_iterations": {
+    "max": 9,
+    "median": 4.0
+  },
+  "reference_fit_warnings": {
+    "primary": [],
+    "unrestricted": []
+  },
+  "primary": {
+    "same_transcripts_in_order": true,
+    "all_reference_models_glm": true,
+    "all_reference_values_finite": true,
+    "gene_ids_match": true,
+    "quantities": {
+      "coef_intercept": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 5.186961971048731e-13,
+        "max_relative_error": 4.128149025625707e-13,
+        "spearman": 0.9999999999880107
+      },
+      "coef_knockdown": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 8.633094239485217e-13,
+        "max_relative_error": 5.3828161986442596e-12,
+        "spearman": 0.9999999999820162
+      },
+      "coef_paired_end": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 1.8138268664813495e-13,
+        "max_relative_error": 7.913103059140056e-11,
+        "spearman": 0.9999999999850133
+      },
+      "dispersion": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 1.843432073656004e-10,
+        "max_relative_error": 1.1955205969692644e-12,
+        "spearman": 0.9999999927824977
+      },
+      "residual_df": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 0.0,
+        "max_relative_error": 0.0,
+        "spearman": 1.0
+      },
+      "variance_posterior": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 2.8612703317776322e-09,
+        "max_relative_error": 1.3121548329280714e-12,
+        "spearman": 0.9999999932500766
+      },
+      "estimate": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 8.633094239485217e-13,
+        "max_relative_error": 5.3828161986442596e-12,
+        "spearman": 0.9999999999820162
+      },
+      "standard_error": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 1.0089706847793423e-12,
+        "max_relative_error": 6.479039860499768e-13,
+        "spearman": 0.9999999930042978
+      },
+      "df": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 1.6111556533360272e-12,
+        "max_relative_error": 3.1198135235319396e-13,
+        "spearman": 1.0
+      },
+      "statistic": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 9.35784782996052e-12,
+        "max_relative_error": 5.30234740989872e-12,
+        "spearman": 0.9999999999850133
+      },
+      "pvalue": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 2.861461068093263e-13,
+        "max_relative_error": 3.391213967864139e-12,
+        "spearman": 0.99999999282446
+      },
+      "fdr": {
+        "elements": 10003,
+        "rtol": 2e-08,
+        "atol": 2e-10,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 4.566902411795581e-13,
+        "max_relative_error": 3.3911583912148457e-12,
+        "spearman": 1.0
+      },
+      "empirical_pvalue": {
+        "elements": 10003,
+        "rtol": 3e-06,
+        "atol": 3e-08,
+        "passed": false,
+        "outside_tolerance": 364,
+        "max_absolute_error": 5.014638500555613e-07,
+        "max_relative_error": 1.1058099299595166e-05,
+        "spearman": 0.999999999940054
+      },
+      "empirical_fdr": {
+        "elements": 10003,
+        "rtol": 3e-06,
+        "atol": 3e-08,
+        "passed": true,
+        "outside_tolerance": 0,
+        "max_absolute_error": 4.168096587875425e-07,
+        "max_relative_error": 4.2039705669315945e-07,
+        "spearman": 1.0
+      }
+    },
+    "max_abs_log10_pvalue_difference": {
+      "regular": 1.4743761767022079e-12,
+      "empirical": 4.802498059230942e-06
+    },
+    "calls": {
+      "regular@0.05": {
+        "saturna": 293,
+        "satuRn": 293,
+        "both": 293,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      },
+      "empirical@0.05": {
+        "saturna": 0,
+        "satuRn": 0,
+        "both": 0,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      },
+      "regular@0.01": {
+        "saturna": 75,
+        "satuRn": 75,
+        "both": 75,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      },
+      "empirical@0.01": {
+        "saturna": 0,
+        "satuRn": 0,
+        "both": 0,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      },
+      "regular@0.1": {
+        "saturna": 539,
+        "satuRn": 539,
+        "both": 539,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      },
+      "empirical@0.1": {
+        "saturna": 0,
+        "satuRn": 0,
+        "both": 0,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      }
+    },
+    "closest_fdr_to_threshold": {
+      "regular": 0.0003587413690020677,
+      "empirical": 0.9414662268109331
+    }
+  },
+  "model_summary": {
+    "prior df": [
+      2.1642690859053055,
+      2.16426908590369
+    ],
+    "prior variance": [
+      18.608034118191032,
+      18.6080341181832
+    ],
+    "empirical null location": [
+      -0.02111513487063606,
+      -0.0211148617443513
+    ],
+    "empirical null scale": [
+      1.649012539854913,
+      1.64901396277916
+    ],
+    "empirical null observations": [
+      10003,
+      10003
+    ]
+  },
+  "unrestricted": {
+    "saturna": {
+      "rejected": true,
+      "error": "Transcript 'FBtr0077941': residual dispersion is effectively zero; a perfectly explained model cannot support this inferential workflow",
+      "zero_dispersion_on_uninformative_transcript": true
+    },
+    "satuRn_uninformative": {
+      "transcripts": 104,
+      "max_dispersion": 0.0,
+      "max_abs_estimate": 0.0,
+      "min_pvalue": 1.0,
+      "regular_calls@0.05": 0,
+      "empirical_calls@0.05": 0
+    },
+    "satuRn_shared_transcripts_primary_vs_unrestricted": {
+      "transcripts": 10003,
+      "max_abs_pvalue_difference": 0.06391401983596601,
+      "max_abs_fdr_difference": 0.08121775917534141,
+      "regular@0.05": {
+        "saturna": 373,
+        "satuRn": 293,
+        "both": 293,
+        "saturna_only": 80,
+        "satuRn_only": 0,
+        "identical": false
+      },
+      "empirical@0.05": {
+        "saturna": 0,
+        "satuRn": 0,
+        "both": 0,
+        "saturna_only": 0,
+        "satuRn_only": 0,
+        "identical": true
+      }
+    }
+  },
+  "unrestricted_prior": {
+    "primary": {
+      "df": 2.16426908590369,
+      "variance": 18.6080341181832
+    },
+    "unrestricted": {
+      "df": 2.14221587153261,
+      "variance": 13.9194520273075
+    }
+  }
+}

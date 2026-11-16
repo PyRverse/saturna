@@ -28,7 +28,17 @@ Input DataFrame sample labels and gene Series indices must match exactly in
 order. No automatic sorting or alignment occurs. String conversion must retain
 distinct gene IDs, and transcript/coefficient names must remain unique.
 
-This alpha has synthetic numerical parity evidence, not comprehensive biological
-validation or a performance claim. Independent bulk and single-cell real-data
-validation, broader diagnostic coverage, and upstream-complete parity remain
-future work.
+Real quantifier output can contain genes whose transcripts received identical
+counts in every sample, because the quantifier could not distinguish them.
+Their usage is constant, so Saturna rejects them as zero-dispersion models.
+Remove such genes first; benchmarks/pasilla/prepare.py shows one rule.
+satuRn instead fits them with zero dispersion, and those zeros lower the
+moderation prior for every other transcript (see docs/realdata.md, D1).
+
+This alpha has synthetic numerical parity evidence and one independent-bulk
+real-data benchmark (pasilla, docs/realdata.md). On that benchmark, regular
+outputs and calls match satuRn; empirical p-values differ by up to 1.1e-5
+relative. This is not comprehensive biological validation, a calibration
+study, or a performance claim. Larger and more diverse real datasets
+(especially ones with empirical calls), single-cell validation, broader
+diagnostic coverage, and upstream-complete parity remain future work.

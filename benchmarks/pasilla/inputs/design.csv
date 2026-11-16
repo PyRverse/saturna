@@ -1,0 +1,8 @@
+sample_id,intercept,knockdown,paired_end
+GSM461176,1,0,0
+GSM461177,1,0,1
+GSM461178,1,0,1
+GSM461179,1,1,0
+GSM461180,1,1,1
+GSM461181,1,1,1
+GSM461182,1,0,0

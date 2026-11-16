@@ -40,3 +40,7 @@ The checked-in synthetic comparisons permit rtol=2e-8 and atol=2e-10 for fit and
 regular-test quantities; empirical p-values/FDR permit rtol=3e-6 and atol=3e-8
 because a different optimizer is used. These tolerances are regression gates,
 not a proof of agreement on every dataset. The report records actual differences.
+On the pasilla real data, the two empirical nulls differ by about 1e-6. locfdr
+stops its Newton iterations once a step falls below 1e-5, so this is within its
+precision. The difference grows in the tails, giving relative empirical p-value
+differences up to 1.1e-5, above the synthetic tolerance (docs/realdata.md, D2).

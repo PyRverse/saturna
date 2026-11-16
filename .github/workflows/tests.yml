@@ -21,6 +21,7 @@ jobs:
       - run: python -m ruff check .
       - run: python -m pytest
       - run: python scripts/parity_report.py --output reports/latest
+      - run: python benchmarks/pasilla/compare.py --output reports/latest/pasilla
       - run: python examples/bulk_dtu.py
       - run: python -m build
       - uses: actions/upload-artifact@v7

@@ -1,0 +1,52 @@
+{
+  "R": "4.6.1",
+  "packages": {
+    "satuRn": "1.20.0",
+    "limma": "3.68.4",
+    "locfdr": "1.1.8",
+    "SummarizedExperiment": "1.42.0",
+    "jsonlite": "2.0.0"
+  },
+  "analyses": {
+    "primary": {
+      "transcripts": 10003,
+      "genes": 3196,
+      "model_types": {
+        "glm": 10003
+      },
+      "fit_warnings": [],
+      "prior_df": 2.16426908590369,
+      "prior_variance": 18.6080341181832,
+      "empirical_null": {
+        "location": -0.0211148617443513,
+        "scale": 1.64901396277916,
+        "observations": 10003,
+        "width_factor": 1.51980365596933,
+        "first_stage": {
+          "location": -0.00879606243961058,
+          "scale": 1.6860657503344
+        }
+      }
+    },
+    "unrestricted": {
+      "transcripts": 10107,
+      "genes": 3248,
+      "model_types": {
+        "glm": 10107
+      },
+      "fit_warnings": [],
+      "prior_df": 2.14221587153261,
+      "prior_variance": 13.9194520273075,
+      "empirical_null": {
+        "location": -0.0212698367525482,
+        "scale": 1.70456324656431,
+        "observations": 10107,
+        "width_factor": 1.51802968423963,
+        "first_stage": {
+          "location": -0.0149367463144447,
+          "scale": 1.74154843698267
+        }
+      }
+    }
+  }
+}
